@@ -1,12 +1,3 @@
-# imisr (development version)
-
-* `imis()` gains `initial_draws` and `initial_log_lik` to start from an
-  existing sample of the prior, such as a Latin hypercube sample from an
-  earlier random search, and its log-likelihoods, without running the model
-  again for those parameter sets (#1).
-* `imis()` no longer fails when an initial draw has zero prior density; such
-  draws now get an importance weight of zero.
-
 # imisr 0.1.0
 
 First release: a rewrite of the archived 'IMIS' package (Raftery and Bao).
@@ -28,7 +19,8 @@ First release: a rewrite of the archived 'IMIS' package (Raftery and Bao).
   copes with points where the posterior is zero, falls back gracefully when
   BFGS or the Hessian fails, and excludes draws near each mode using that
   mode's covariance, as described in Raftery and Bao (2010).
-* The likelihood is not evaluated where the prior density is zero.
+* The likelihood is not evaluated where the prior density is zero, and
+  such draws get an importance weight of zero.
 * `parallel = TRUE` evaluates the likelihood in parallel with 'future.apply',
   in blocks of draws; the backend is chosen with `future::plan()`.
 * `catch_errors = TRUE` gives a log-likelihood of `-Inf` to parameter sets
@@ -44,6 +36,10 @@ First release: a rewrite of the archived 'IMIS' package (Raftery and Bao).
   (importance-weighted posterior summaries), `plot()` (diagnostics, prior vs
   posterior marginals, pairs), `as.matrix()` and `as.data.frame()` methods.
 * `bayes_factor()` compares two models fitted with `imis()`.
+* `initial_draws` and `initial_log_lik` start `imis()` from an existing
+  sample of the prior, such as a Latin hypercube sample from an earlier
+  random search, and its log-likelihoods, without running the model again
+  for those parameter sets (#1).
 * `imis_legacy()` is a drop-in replacement for `IMIS::IMIS()`.
 * `vectorized` / `vectorized_prior` let the log-likelihood and log-prior be
   written either for a matrix of parameter sets or for one parameter vector.

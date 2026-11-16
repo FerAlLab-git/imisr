@@ -1,3 +1,18 @@
+## Resubmission
+
+This is a resubmission. In response to the review:
+
+* References in the Description are now written as authors (year)
+  <doi:...>, with years in parentheses and no commas.
+* The only term in single quotes is now the package name 'future', which
+  the Description calls the 'future' package (it said 'future' framework);
+  the quotes around IMIS-opt were removed.
+
+Since the first submission I also added two arguments to `imis()`
+(`initial_draws` and `initial_log_lik`), fixed importance weights for initial
+draws with zero prior density, and added references for the example models
+in the documentation.
+
 ## Submission
 
 This is a new submission. 'imisr' re-implements the incremental mixture

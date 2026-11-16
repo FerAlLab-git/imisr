@@ -1,7 +1,7 @@
 Type: Package
 Package: imisr
 Title: Incremental Mixture Importance Sampling
-Version: 0.1.0.9000
+Version: 0.1.0
 Authors@R: c(
     person("Fernando", "Alarid-Escudero", , "falarid@stanford.edu",
            role = c("aut", "cre"),
@@ -20,15 +20,15 @@ Description: Draws samples from a posterior distribution and estimates the
     importance sampling function is built up iteratively as a defensive
     mixture of the prior and multivariate normal components centered where
     the current importance weights are largest, optionally after an
-    optimization stage that locates local posterior modes ("IMIS-opt").
+    optimization stage that locates local posterior modes (IMIS-opt).
     Designed for calibrating mechanistic and simulation models, whose
     posteriors are often ridge-shaped or multimodal. Computations are
     done on the log scale; several components can be added per iteration;
-    new draws can come from the newest components (Raftery and Bao, 2010
-    <doi:10.1111/j.1541-0420.2010.01399.x>) or from the whole current
-    mixture (Steele, Raftery and Emond, 2006
-    <doi:10.1198/106186006X132358>); and likelihood evaluations can run
-    in parallel through the 'future' framework.
+    new draws can come from the newest components, as in Raftery and Bao
+    (2010) <doi:10.1111/j.1541-0420.2010.01399.x>, or from the whole
+    current mixture, as in Steele, Raftery and Emond (2006)
+    <doi:10.1198/106186006X132358>; and likelihood evaluations can run in
+    parallel with the 'future' package.
 License: GPL (>= 3)
 URL: https://github.com/FerAlLab-git/imisr
 BugReports: https://github.com/FerAlLab-git/imisr/issues
