@@ -33,7 +33,7 @@ Other contributors:
   \item Adrian E. Raftery (Author of the original 'IMIS' package) [contributor]
   \item Le Bao (Author of the original 'IMIS' package) [contributor]
   \item Jorge Roa \email{jorgeroa@stanford.edu} (\href{https://orcid.org/0000-0002-3972-9793}{ORCID}) (Hex sticker design and package testing) [contributor]
-  \item National Cancer Institute (CISNET grants U01CA319117, U01CA319219 and U01CA318218) [funder]
+  \item National Cancer Institute (CISNET grants U01CA319117, U01CA319219 and U01CA319218) [funder]
 }
 
 }
