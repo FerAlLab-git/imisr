@@ -12,7 +12,9 @@ Authors@R: c(
            comment = "Author of the original 'IMIS' package"),
     person("Jorge", "Roa", , "jorgeroa@stanford.edu", role = "ctb",
            comment = c(ORCID = "0000-0002-3972-9793",
-                       "Hex sticker design and package testing"))
+                       "Hex sticker design and package testing")),
+    person("National Cancer Institute", role = "fnd",
+           comment = "CISNET grants U01CA319117, U01CA319219 and U01CA318218")
   )
 Description: Draws samples from a posterior distribution and estimates the
     marginal likelihood (model evidence) with incremental mixture
