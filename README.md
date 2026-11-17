@@ -142,6 +142,15 @@ workflow, including a non-identifiable model with a bimodal posterior.
    points in a resample reaches 63%, the value expected when the sampling
    function equals the posterior), then resample.
 
+## Funding
+
+Development of imisr was supported by the National Cancer Institute (NCI)
+of the National Institutes of Health through grants U01CA319117 (SimCRC,
+colorectal cancer), U01CA319219 (DESCIPHR-GC, gastric cancer) and
+U01CA318218 (COBRAS, bladder cancer). The content is solely the
+responsibility of the authors and does not necessarily represent the
+official views of the National Institutes of Health.
+
 ## References
 
 - Alarid-Escudero F, MacLehose RF, Peralta Y, Kuntz KM, Enns EA (2018).
